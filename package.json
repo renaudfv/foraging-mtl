@@ -1,10 +1,12 @@
 {
   "scripts": {
     "build": "next build",
-    "dev": "next",
-    "now-build": "next build"
+    "now-build": "next build",
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "next": "^8.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
