@@ -1,14 +1,13 @@
 {
   "scripts": {
-    "build": "next build",
-    "now-build": "next build",
-    "dev": "node server.js",
-    "start": "NODE_ENV=production node server.js"
+    "start": "nodemon -e js,pug --exec 'now dev'",
+    "deploy": "now"
   },
   "dependencies": {
     "express": "^4.16.4",
-    "next": "^8.0.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
   }
 }
