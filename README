@@ -4,3 +4,9 @@ meant to indicate when they produce edible by-products at certain moment of
 the year.
 
 ## Setup
+
+### Scripts
+Needs Cairo
+````
+brew install cairo
+````

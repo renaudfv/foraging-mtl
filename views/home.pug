@@ -2,9 +2,12 @@ doctype html
 html
     head
         link(rel='stylesheet', href='https://unpkg.com/leaflet@1.4.0/dist/leaflet.css', integrity='sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==', crossorigin='')
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.0/MarkerCluster.css")
         script(src='https://unpkg.com/leaflet@1.4.0/dist/leaflet.js', integrity='sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==', crossorigin='')
         link(rel='stylesheet', href='/static/styles.css')
     body
         div(id='mapId')
+        script(src='/static/libs/papaparse.min.js')
+        script(src='https://unpkg.com/leaflet.markercluster@1.4.0/dist/leaflet.markercluster.js', crossorigin='')
         script(src='/static/client.js')
 

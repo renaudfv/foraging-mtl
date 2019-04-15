@@ -5,6 +5,8 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "jsdom": "^14.0.0",
+    "leaflet": "^1.4.0",
     "pug": "^2.0.3"
   },
   "devDependencies": {
