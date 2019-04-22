@@ -1,0 +1,53 @@
+# ForagingMTL - Scripts
+ETL python scripts to transform the [Montreal's public trees](http://donnees.ville.montreal.qc.ca/dataset/arbres)
+CSV file into a JSON slimmed down version, with more data per plant type.
+
+## Extract Data cleanup
+Removes unused fields to keep:
+- SIGLE
+Acronyme composé des deux premières lettres du genre, de l’espèce et du cultivar, si appliquable du nom Latin.
+- Essence_latin: Cultivar's Latin name
+- Essence_fr: Cultivar's French common name
+- ESSENCE_ANG: Cultivar's English common name
+- Date_plantation: Data the tree was planted
+- Longitude: Longitude degree
+- Latitude: Latitude degree
+
+## Transform
+- Rename columns
+- Remove entries with no latitude or longitude
+
+## Load
+The data will be saved to a JSON file which can be used easily with multiple
+technology, but with ease using Node.js.
+
+# python
+
+Pep8
+Pipenv
+
+## Setup
+
+This is the step by step version, for better undestanding.
+Make sur you create a .env file containing the [Trefle API token](https://trefle.io/)
+as
+```
+# .env content
+TREFLE_TOKEN=...
+```
+
+1. Install Pipenv
+2. Enter the virtualenv, will load the local .env file
+````
+pipenv shell
+````
+
+2. Setup dev env by downloading data file
+```
+pipenv run extract
+```
+
+3. Clean the data and add pertinent inputs from
+
+
+## Usage
